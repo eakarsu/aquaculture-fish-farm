@@ -1,0 +1,30 @@
+{
+  "id": "aquaculture-fish-farm",
+  "title": "Aquaculture Fish Farm App",
+  "industry": "Agriculture & Natural Resources",
+  "industryId": "agriculture-natural-resources",
+  "specialization": "Aquaculture Fish Farm",
+  "sourcePlatformGroup": "agriculture-resources-platform",
+  "sources": [
+    "AIAquacultureFishFarm",
+    "AIFisheriesAquacultureManager",
+    "AIForestryTimberManagement",
+    "AILivestockHealthMonitoring"
+  ],
+  "featureCount": 244,
+  "candidateFeatureCount": 338,
+  "eliminatedSimilarFeatures": 94,
+  "evidenceCount": 607,
+  "aiPageCount": 20,
+  "sourceAIPageCount": 21,
+  "featureEvidencePolicy": "Existing source routes, pages, APIs, models, schemas, and navigation only",
+  "optimizationPolicy": "Equivalent feature names are consolidated once per industry and assigned to one canonical app owner",
+  "database": "database.sqlite",
+  "databaseSeed": {
+    "seededProjects": 2,
+    "seededTables": 31,
+    "seededRows": 465
+  },
+  "visibleFeatureCount": 62,
+  "featureVisibilityMode": "seeded-or-ai"
+}
