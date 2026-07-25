@@ -1,5 +1,91 @@
 [
   {
+    "name": "Ack",
+    "canonicalKey": "ack",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/alerts/:id/ack"
+    ],
+    "sourceProjects": [
+      "AIFisheriesAquacultureManager"
+    ],
+    "consolidatedFromApps": [
+      "agriculture-natural-resources/aquaculture-fish-farm"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIFisheriesAquacultureManager",
+        "path": "server/routes/sensors.js:112",
+        "route": "/alerts/:id/ack",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      }
+    ]
+  },
+  {
+    "name": "Advise",
+    "canonicalKey": "advise",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/agentic-farm/advise"
+    ],
+    "sourceProjects": [
+      "AIFisheriesAquacultureManager"
+    ],
+    "consolidatedFromApps": [
+      "agriculture-natural-resources/aquaculture-fish-farm"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIFisheriesAquacultureManager",
+        "path": "server/routes/agenticFarm.js:91",
+        "route": "/agentic-farm/advise",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      }
+    ]
+  },
+  {
+    "name": "Agentic Farm",
+    "canonicalKey": "agentic farm",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/AgenticFarm",
+      "/agentic-farm"
+    ],
+    "sourceProjects": [
+      "AIFisheriesAquacultureManager"
+    ],
+    "consolidatedFromApps": [
+      "agriculture-natural-resources/aquaculture-fish-farm"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIFisheriesAquacultureManager",
+        "path": "client/src/App.js:412",
+        "route": "/agentic-farm",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIFisheriesAquacultureManager",
+        "path": "client/src/pages/AgenticFarm.js",
+        "route": "/AgenticFarm",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      }
+    ]
+  },
+  {
     "name": "AI Analysis",
     "canonicalKey": "ai analysis",
     "aliases": [],
@@ -720,25 +806,37 @@
   {
     "name": "AI Results",
     "canonicalKey": "ai result",
-    "aliases": [],
+    "aliases": [
+      "AI Results Page"
+    ],
     "kinds": [
       "api",
       "navigation",
       "page"
     ],
     "routes": [
+      "/AIResultsPage",
       "/AiResults",
       "/ai-results",
       "/api/ai-results"
     ],
     "sourceProjects": [
+      "AIAgricultureAssistant",
       "AIFisheriesAquacultureManager",
       "AIForestryTimberManagement"
     ],
     "consolidatedFromApps": [
+      "agriculture-natural-resources/agriculture-assistant",
       "agriculture-natural-resources/aquaculture-fish-farm"
     ],
     "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIAgricultureAssistant",
+        "path": "frontend/src/pages/AIResultsPage.jsx",
+        "route": "/AIResultsPage",
+        "originApp": "agriculture-natural-resources/agriculture-assistant"
+      },
       {
         "kind": "page",
         "sourceProject": "AIFisheriesAquacultureManager",
@@ -763,7 +861,7 @@
       {
         "kind": "api",
         "sourceProject": "AIForestryTimberManagement",
-        "path": "server/index.js:341",
+        "path": "server/index.js:262",
         "route": "/api/ai-results",
         "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
       },
@@ -937,14 +1035,14 @@
       {
         "kind": "page",
         "sourceProject": "ai-low-pesticide-agriculture",
-        "path": "frontend/src/App.tsx:68",
+        "path": "frontend/src/App.tsx:65",
         "route": "/ai-center",
         "originApp": "agriculture-natural-resources/agriculture-assistant"
       },
       {
         "kind": "page",
         "sourceProject": "ai-low-pesticide-agriculture",
-        "path": "frontend/src/components/Layout.tsx:23",
+        "path": "frontend/src/components/Layout.tsx:24",
         "route": "/ai-center",
         "originApp": "agriculture-natural-resources/agriculture-assistant"
       },
@@ -1051,13 +1149,6 @@
     ],
     "evidence": [
       {
-        "kind": "page",
-        "sourceProject": "AIWildlifeAntiPoachingOps",
-        "path": "frontend/src/pages/AIVendorQualityPage.js",
-        "route": "/AIVendorQualityPage",
-        "originApp": "agriculture-natural-resources/mineral-exploration-geology"
-      },
-      {
         "kind": "navigation",
         "sourceProject": "AIAquacultureFishFarm",
         "path": "frontend/src/components/Sidebar.js:70",
@@ -1070,6 +1161,13 @@
         "path": "frontend/src/pages/AIVendorQualityPage.js",
         "route": "/AIVendorQualityPage",
         "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIWildlifeAntiPoachingOps",
+        "path": "frontend/src/pages/AIVendorQualityPage.js",
+        "route": "/AIVendorQualityPage",
+        "originApp": "agriculture-natural-resources/mineral-exploration-geology"
       }
     ]
   },
@@ -1160,92 +1258,6 @@
     ]
   },
   {
-    "name": "Ack",
-    "canonicalKey": "ack",
-    "aliases": [],
-    "kinds": [
-      "api"
-    ],
-    "routes": [
-      "/alerts/:id/ack"
-    ],
-    "sourceProjects": [
-      "AIFisheriesAquacultureManager"
-    ],
-    "consolidatedFromApps": [
-      "agriculture-natural-resources/aquaculture-fish-farm"
-    ],
-    "evidence": [
-      {
-        "kind": "api",
-        "sourceProject": "AIFisheriesAquacultureManager",
-        "path": "server/routes/sensors.js:112",
-        "route": "/alerts/:id/ack",
-        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
-      }
-    ]
-  },
-  {
-    "name": "Advise",
-    "canonicalKey": "advise",
-    "aliases": [],
-    "kinds": [
-      "api"
-    ],
-    "routes": [
-      "/agentic-farm/advise"
-    ],
-    "sourceProjects": [
-      "AIFisheriesAquacultureManager"
-    ],
-    "consolidatedFromApps": [
-      "agriculture-natural-resources/aquaculture-fish-farm"
-    ],
-    "evidence": [
-      {
-        "kind": "api",
-        "sourceProject": "AIFisheriesAquacultureManager",
-        "path": "server/routes/agenticFarm.js:91",
-        "route": "/agentic-farm/advise",
-        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
-      }
-    ]
-  },
-  {
-    "name": "Agentic Farm",
-    "canonicalKey": "agentic farm",
-    "aliases": [],
-    "kinds": [
-      "page"
-    ],
-    "routes": [
-      "/AgenticFarm",
-      "/agentic-farm"
-    ],
-    "sourceProjects": [
-      "AIFisheriesAquacultureManager"
-    ],
-    "consolidatedFromApps": [
-      "agriculture-natural-resources/aquaculture-fish-farm"
-    ],
-    "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "AIFisheriesAquacultureManager",
-        "path": "client/src/App.js:412",
-        "route": "/agentic-farm",
-        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIFisheriesAquacultureManager",
-        "path": "client/src/pages/AgenticFarm.js",
-        "route": "/AgenticFarm",
-        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
-      }
-    ]
-  },
-  {
     "name": "Animal",
     "canonicalKey": "animal",
     "aliases": [],
@@ -1271,7 +1283,7 @@
   },
   {
     "name": "Animal Vitals Trend",
-    "canonicalKey": "animal trend vitals",
+    "canonicalKey": "animal trend vital",
     "aliases": [],
     "kinds": [
       "api"
@@ -1599,7 +1611,7 @@
       {
         "kind": "api",
         "sourceProject": "AILivestockHealthMonitoring",
-        "path": "backend/routes/ai.js:49",
+        "path": "backend/routes/ai.js:52",
         "route": "/breeding-advisor",
         "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
       }
@@ -1778,7 +1790,7 @@
       {
         "kind": "api",
         "sourceProject": "AIForestryTimberManagement",
-        "path": "server/index.js:477",
+        "path": "server/index.js:398",
         "route": "/api/ai/carbon-estimation",
         "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
       },
@@ -1975,7 +1987,7 @@
   },
   {
     "name": "Cf Carbon Market Arbitrage Compares Verra V",
-    "canonicalKey": "arbitrage carbon cf compares market v verra",
+    "canonicalKey": "arbitrage carbon cf compare market v verra",
     "aliases": [],
     "kinds": [
       "page"
@@ -2214,7 +2226,7 @@
       {
         "kind": "api",
         "sourceProject": "AIForestryTimberManagement",
-        "path": "server/index.js:772",
+        "path": "server/index.js:693",
         "route": "/api/ai/compliance-review",
         "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
       },
@@ -2414,6 +2426,13 @@
         "originApp": "agriculture-natural-resources/agriculture-assistant"
       },
       {
+        "kind": "page",
+        "sourceProject": "AIBeekeepingApiary",
+        "path": "frontend/src/pages/CustomersPage.js",
+        "route": "/CustomersPage",
+        "originApp": "agriculture-natural-resources/agriculture-assistant"
+      },
+      {
         "kind": "navigation",
         "sourceProject": "AIAquacultureFishFarm",
         "path": "frontend/src/components/Sidebar.js:33",
@@ -2433,13 +2452,6 @@
         "path": "frontend/src/pages/Dashboard.js:18",
         "route": "/customers",
         "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIBeekeepingApiary",
-        "path": "frontend/src/pages/CustomersPage.js",
-        "route": "/CustomersPage",
-        "originApp": "agriculture-natural-resources/agriculture-assistant"
       },
       {
         "kind": "page",
@@ -2806,6 +2818,50 @@
     ]
   },
   {
+    "name": "Decision",
+    "canonicalKey": "decision",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/:id/decision",
+      "/orders/:id/change-orders/:changeId/decision"
+    ],
+    "sourceProjects": [
+      "AIForestryTimberManagement",
+      "AILivestockHealthMonitoring",
+      "ai-low-pesticide-agriculture"
+    ],
+    "consolidatedFromApps": [
+      "agriculture-natural-resources/agriculture-assistant",
+      "agriculture-natural-resources/aquaculture-fish-farm"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "ai-low-pesticide-agriculture",
+        "path": "backend/routes/fieldOperations.js:435",
+        "route": "/orders/:id/change-orders/:changeId/decision",
+        "originApp": "agriculture-natural-resources/agriculture-assistant"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIForestryTimberManagement",
+        "path": "server/routes/governedFieldPlans.js:8",
+        "route": "/:id/decision",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AILivestockHealthMonitoring",
+        "path": "backend/governance/router.js:111",
+        "route": "/:id/decision",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      }
+    ]
+  },
+  {
     "name": "Diagnose",
     "canonicalKey": "diagnose",
     "aliases": [],
@@ -2861,7 +2917,7 @@
       {
         "kind": "api",
         "sourceProject": "AIForestryTimberManagement",
-        "path": "server/index.js:503",
+        "path": "server/index.js:424",
         "route": "/api/ai/disease-analysis",
         "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
       },
@@ -2941,7 +2997,7 @@
       {
         "kind": "api",
         "sourceProject": "AIForestryTimberManagement",
-        "path": "server/index.js:550",
+        "path": "server/index.js:471",
         "route": "/api/ai/disease-outbreak-check",
         "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
       }
@@ -3015,7 +3071,7 @@
       {
         "kind": "api",
         "sourceProject": "AILivestockHealthMonitoring",
-        "path": "backend/routes/ai.js:26",
+        "path": "backend/routes/ai.js:29",
         "route": "/disease-risk-assessment",
         "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
       }
@@ -3160,7 +3216,7 @@
       {
         "kind": "api",
         "sourceProject": "AILivestockHealthMonitoring",
-        "path": "backend/routes/ai.js:115",
+        "path": "backend/routes/ai.js:118",
         "route": "/economic-forecaster",
         "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
       }
@@ -3193,6 +3249,32 @@
     ]
   },
   {
+    "name": "Enqueue",
+    "canonicalKey": "enqueue",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/providers/:provider/enqueue"
+    ],
+    "sourceProjects": [
+      "AIAquacultureFishFarm"
+    ],
+    "consolidatedFromApps": [
+      "agriculture-natural-resources/aquaculture-fish-farm"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIAquacultureFishFarm",
+        "path": "backend/routes/governedOperations.js:5",
+        "route": "/providers/:provider/enqueue",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      }
+    ]
+  },
+  {
     "name": "Equipment Maintenance",
     "canonicalKey": "equipment maintenance",
     "aliases": [],
@@ -3217,22 +3299,8 @@
     "evidence": [
       {
         "kind": "api",
-        "sourceProject": "AIYieldPredictionMarketIntel",
-        "path": "backend/src/routes/ai.js:76",
-        "route": "/equipment-maintenance",
-        "originApp": "agriculture-natural-resources/mineral-exploration-geology"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIYieldPredictionMarketIntel",
-        "path": "frontend/src/App.js:71",
-        "route": "/ai/equipment-maintenance",
-        "originApp": "agriculture-natural-resources/mineral-exploration-geology"
-      },
-      {
-        "kind": "api",
         "sourceProject": "AIForestryTimberManagement",
-        "path": "server/index.js:669",
+        "path": "server/index.js:590",
         "route": "/api/ai/equipment-maintenance",
         "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
       },
@@ -3255,6 +3323,72 @@
         "sourceProject": "AIForestryTimberManagement",
         "path": "client/src/components/Sidebar.jsx:32",
         "route": "/ai/equipment-maintenance",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIYieldPredictionMarketIntel",
+        "path": "backend/src/routes/ai.js:97",
+        "route": "/equipment-maintenance",
+        "originApp": "agriculture-natural-resources/mineral-exploration-geology"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIYieldPredictionMarketIntel",
+        "path": "frontend/src/App.js:71",
+        "route": "/ai/equipment-maintenance",
+        "originApp": "agriculture-natural-resources/mineral-exploration-geology"
+      }
+    ]
+  },
+  {
+    "name": "Erasure Complete",
+    "canonicalKey": "complete erasure",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/:id/erasure-complete"
+    ],
+    "sourceProjects": [
+      "AILivestockHealthMonitoring"
+    ],
+    "consolidatedFromApps": [
+      "agriculture-natural-resources/aquaculture-fish-farm"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AILivestockHealthMonitoring",
+        "path": "backend/governance/router.js:218",
+        "route": "/:id/erasure-complete",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      }
+    ]
+  },
+  {
+    "name": "Erasure Request",
+    "canonicalKey": "erasure request",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/:id/erasure-request"
+    ],
+    "sourceProjects": [
+      "AILivestockHealthMonitoring"
+    ],
+    "consolidatedFromApps": [
+      "agriculture-natural-resources/aquaculture-fish-farm"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AILivestockHealthMonitoring",
+        "path": "backend/governance/router.js:188",
+        "route": "/:id/erasure-request",
         "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
       }
     ]
@@ -3295,6 +3429,58 @@
     ]
   },
   {
+    "name": "Events",
+    "canonicalKey": "event",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/:id/events"
+    ],
+    "sourceProjects": [
+      "AILivestockHealthMonitoring"
+    ],
+    "consolidatedFromApps": [
+      "agriculture-natural-resources/aquaculture-fish-farm"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AILivestockHealthMonitoring",
+        "path": "backend/governance/router.js:78",
+        "route": "/:id/events",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      }
+    ]
+  },
+  {
+    "name": "Farm Readiness",
+    "canonicalKey": "farm readiness",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/farm-readiness"
+    ],
+    "sourceProjects": [
+      "AIAquacultureFishFarm"
+    ],
+    "consolidatedFromApps": [
+      "agriculture-natural-resources/aquaculture-fish-farm"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIAquacultureFishFarm",
+        "path": "backend/routes/runtimeAi.js:8",
+        "route": "/farm-readiness",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      }
+    ]
+  },
+  {
     "name": "Farms",
     "canonicalKey": "farm",
     "aliases": [
@@ -3319,13 +3505,6 @@
       "agriculture-natural-resources/mineral-exploration-geology"
     ],
     "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "AICropDiseasePestDetection",
-        "path": "frontend/src/featureConfig.js:463",
-        "route": "/farm-management",
-        "originApp": "agriculture-natural-resources/mineral-exploration-geology"
-      },
       {
         "kind": "navigation",
         "sourceProject": "AIAquacultureFishFarm",
@@ -3353,6 +3532,13 @@
         "path": "frontend/src/pages/FarmsPage.js",
         "route": "/FarmsPage",
         "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AICropDiseasePestDetection",
+        "path": "frontend/src/featureConfig.js:463",
+        "route": "/farm-management",
+        "originApp": "agriculture-natural-resources/mineral-exploration-geology"
       }
     ]
   },
@@ -3582,19 +3768,15 @@
   {
     "name": "Financial",
     "canonicalKey": "financial",
-    "aliases": [
-      "Financial Record"
-    ],
+    "aliases": [],
     "kinds": [
-      "model",
       "page"
     ],
     "routes": [
       "/financial"
     ],
     "sourceProjects": [
-      "AIFisheriesAquacultureManager",
-      "AILivestockHealthMonitoring"
+      "AIFisheriesAquacultureManager"
     ],
     "consolidatedFromApps": [
       "agriculture-natural-resources/aquaculture-fish-farm"
@@ -3606,7 +3788,24 @@
         "path": "client/src/components/Layout.js:27",
         "route": "/financial",
         "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
-      },
+      }
+    ]
+  },
+  {
+    "name": "Financial Record",
+    "canonicalKey": "financial record",
+    "aliases": [],
+    "kinds": [
+      "model"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AILivestockHealthMonitoring"
+    ],
+    "consolidatedFromApps": [
+      "agriculture-natural-resources/aquaculture-fish-farm"
+    ],
+    "evidence": [
       {
         "kind": "model",
         "sourceProject": "AILivestockHealthMonitoring",
@@ -3777,6 +3976,41 @@
     ]
   },
   {
+    "name": "Gap Agentic",
+    "canonicalKey": "agentic gap",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/GapAgentic"
+    ],
+    "sourceProjects": [
+      "AILivestockHealthMonitoring",
+      "AIMiningOperationsOptimizer"
+    ],
+    "consolidatedFromApps": [
+      "agriculture-natural-resources/agriculture-assistant",
+      "agriculture-natural-resources/aquaculture-fish-farm"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIMiningOperationsOptimizer",
+        "path": "frontend/src/pages/GapAgentic.jsx",
+        "route": "/GapAgentic",
+        "originApp": "agriculture-natural-resources/agriculture-assistant"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AILivestockHealthMonitoring",
+        "path": "frontend/src/pages/GapAgentic.jsx",
+        "route": "/GapAgentic",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      }
+    ]
+  },
+  {
     "name": "Gap AI Breeding Advisor",
     "canonicalKey": "advisor ai breeding gap",
     "aliases": [],
@@ -3856,7 +4090,7 @@
   },
   {
     "name": "Gap AI Endpoints Are Sparse 2 Surfaced Most Route Files Act",
-    "canonicalKey": "2 act ai are endpoints files gap most route sparse surfaced",
+    "canonicalKey": "2 act ai are endpoint file gap most route sparse surfaced",
     "aliases": [],
     "kinds": [
       "api"
@@ -3928,41 +4162,6 @@
         "sourceProject": "AILivestockHealthMonitoring",
         "path": "frontend/src/pages/GapAiNutritionOptimizer.jsx",
         "route": "/GapAiNutritionOptimizer",
-        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
-      }
-    ]
-  },
-  {
-    "name": "Gap Agentic",
-    "canonicalKey": "agentic gap",
-    "aliases": [],
-    "kinds": [
-      "page"
-    ],
-    "routes": [
-      "/GapAgentic"
-    ],
-    "sourceProjects": [
-      "AILivestockHealthMonitoring",
-      "AIMiningOperationsOptimizer"
-    ],
-    "consolidatedFromApps": [
-      "agriculture-natural-resources/agriculture-assistant",
-      "agriculture-natural-resources/aquaculture-fish-farm"
-    ],
-    "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "AIMiningOperationsOptimizer",
-        "path": "frontend/src/pages/GapAgentic.jsx",
-        "route": "/GapAgentic",
-        "originApp": "agriculture-natural-resources/agriculture-assistant"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AILivestockHealthMonitoring",
-        "path": "frontend/src/pages/GapAgentic.jsx",
-        "route": "/GapAgentic",
         "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
       }
     ]
@@ -4160,7 +4359,7 @@
   },
   {
     "name": "Gap Monolithic Structure Makes Route Discove",
-    "canonicalKey": "discove gap makes monolithic route structure",
+    "canonicalKey": "discove gap make monolithic route structure",
     "aliases": [],
     "kinds": [
       "page"
@@ -4322,7 +4521,7 @@
   },
   {
     "name": "Gap No Feeding Schedule Automation Rules Engine",
-    "canonicalKey": "automation engine feeding gap no rules schedule",
+    "canonicalKey": "automation engine feeding gap no rule schedule",
     "aliases": [],
     "kinds": [
       "api"
@@ -4528,7 +4727,7 @@
   },
   {
     "name": "Gap No Soprag Over Forestry Regulations Defe",
-    "canonicalKey": "defe forestry gap no over regulations soprag",
+    "canonicalKey": "defe forestry gap no over regulation soprag",
     "aliases": [],
     "kinds": [
       "page"
@@ -4780,7 +4979,7 @@
       {
         "kind": "api",
         "sourceProject": "AIForestryTimberManagement",
-        "path": "server/index.js:612",
+        "path": "server/index.js:533",
         "route": "/api/ai/gis-harvest-blocks",
         "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
       },
@@ -4847,7 +5046,7 @@
       {
         "kind": "api",
         "sourceProject": "AIForestryTimberManagement",
-        "path": "server/index.js:579",
+        "path": "server/index.js:500",
         "route": "/api/ai/growth-prediction",
         "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
       },
@@ -4930,7 +5129,7 @@
       {
         "kind": "api",
         "sourceProject": "AIForestryTimberManagement",
-        "path": "server/index.js:441",
+        "path": "server/index.js:362",
         "route": "/api/ai/harvest-optimization",
         "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
       },
@@ -5086,13 +5285,6 @@
     "evidence": [
       {
         "kind": "api",
-        "sourceProject": "AICropDiseasePestDetection",
-        "path": "backend/server.js:587",
-        "route": "/api/ai/harvest-timing",
-        "originApp": "agriculture-natural-resources/mineral-exploration-geology"
-      },
-      {
-        "kind": "api",
         "sourceProject": "AIAquacultureFishFarm",
         "path": "backend/routes/ai.js:951",
         "route": "/harvest-timing",
@@ -5104,6 +5296,13 @@
         "path": "frontend/src/App.js:133",
         "route": "/ai/harvest-timing",
         "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AICropDiseasePestDetection",
+        "path": "backend/server.js:588",
+        "route": "/api/ai/harvest-timing",
+        "originApp": "agriculture-natural-resources/mineral-exploration-geology"
       }
     ]
   },
@@ -5245,7 +5444,7 @@
       {
         "kind": "api",
         "sourceProject": "AILivestockHealthMonitoring",
-        "path": "backend/routes/ai.js:72",
+        "path": "backend/routes/ai.js:75",
         "route": "/health-anomaly-detector",
         "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
       }
@@ -5512,6 +5711,40 @@
     ]
   },
   {
+    "name": "Integrations",
+    "canonicalKey": "integration",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/:id/integrations"
+    ],
+    "sourceProjects": [
+      "AIForestryTimberManagement",
+      "AILivestockHealthMonitoring"
+    ],
+    "consolidatedFromApps": [
+      "agriculture-natural-resources/aquaculture-fish-farm"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIForestryTimberManagement",
+        "path": "server/routes/governedFieldPlans.js:9",
+        "route": "/:id/integrations",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AILivestockHealthMonitoring",
+        "path": "backend/governance/router.js:155",
+        "route": "/:id/integrations",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      }
+    ]
+  },
+  {
     "name": "Latest",
     "canonicalKey": "latest",
     "aliases": [],
@@ -5561,13 +5794,6 @@
     "evidence": [
       {
         "kind": "api",
-        "sourceProject": "AIWildlifeAntiPoachingOps",
-        "path": "backend/routes/partnerStubs.js:64",
-        "route": "/partner-agency/log",
-        "originApp": "agriculture-natural-resources/mineral-exploration-geology"
-      },
-      {
-        "kind": "api",
         "sourceProject": "AIAquacultureFishFarm",
         "path": "backend/routes/waterQualityIngest.js:118",
         "route": "/log",
@@ -5586,6 +5812,13 @@
         "path": "server/routes/traceabilityChain.js:14",
         "route": "/log",
         "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIWildlifeAntiPoachingOps",
+        "path": "backend/routes/partnerStubs.js:64",
+        "route": "/partner-agency/log",
+        "originApp": "agriculture-natural-resources/mineral-exploration-geology"
       }
     ]
   },
@@ -5708,13 +5941,16 @@
   {
     "name": "Market Prices",
     "canonicalKey": "market price",
-    "aliases": [],
+    "aliases": [
+      "Market Prices Page"
+    ],
     "kinds": [
       "api",
       "navigation",
       "page"
     ],
     "routes": [
+      "/MarketPricesPage",
       "/api/market-prices",
       "/market-prices"
     ],
@@ -5742,16 +5978,23 @@
         "originApp": "agriculture-natural-resources/agriculture-assistant"
       },
       {
+        "kind": "page",
+        "sourceProject": "AIBeekeepingApiary",
+        "path": "frontend/src/pages/MarketPricesPage.js",
+        "route": "/MarketPricesPage",
+        "originApp": "agriculture-natural-resources/agriculture-assistant"
+      },
+      {
         "kind": "api",
         "sourceProject": "AIForestryTimberManagement",
-        "path": "server/index.js:319",
+        "path": "server/index.js:240",
         "route": "/api/market-prices",
         "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
       },
       {
         "kind": "api",
         "sourceProject": "AIForestryTimberManagement",
-        "path": "server/index.js:323",
+        "path": "server/index.js:244",
         "route": "/api/market-prices",
         "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
       },
@@ -5907,20 +6150,16 @@
   {
     "name": "Mortality",
     "canonicalKey": "mortality",
-    "aliases": [
-      "Mortality Record"
-    ],
+    "aliases": [],
     "kinds": [
-      "api",
-      "model"
+      "api"
     ],
     "routes": [
       "/api/regulatory-reports/mortality",
       "/mortality"
     ],
     "sourceProjects": [
-      "AIAquacultureFishFarm",
-      "AILivestockHealthMonitoring"
+      "AIAquacultureFishFarm"
     ],
     "consolidatedFromApps": [
       "agriculture-natural-resources/aquaculture-fish-farm"
@@ -5938,13 +6177,6 @@
         "sourceProject": "AIAquacultureFishFarm",
         "path": "backend/routes/regulatoryReports.js:93",
         "route": "/mortality",
-        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
-      },
-      {
-        "kind": "model",
-        "sourceProject": "AILivestockHealthMonitoring",
-        "path": "backend/models/MortalityRecord.js",
-        "route": "",
         "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
       }
     ]
@@ -6134,6 +6366,30 @@
     ]
   },
   {
+    "name": "Mortality Record",
+    "canonicalKey": "mortality record",
+    "aliases": [],
+    "kinds": [
+      "model"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AILivestockHealthMonitoring"
+    ],
+    "consolidatedFromApps": [
+      "agriculture-natural-resources/aquaculture-fish-farm"
+    ],
+    "evidence": [
+      {
+        "kind": "model",
+        "sourceProject": "AILivestockHealthMonitoring",
+        "path": "backend/models/MortalityRecord.js",
+        "route": "",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      }
+    ]
+  },
+  {
     "name": "Net Pens",
     "canonicalKey": "net pens",
     "aliases": [
@@ -6230,7 +6486,7 @@
       {
         "kind": "api",
         "sourceProject": "AILivestockHealthMonitoring",
-        "path": "backend/routes/ai.js:91",
+        "path": "backend/routes/ai.js:94",
         "route": "/nutrition-optimizer",
         "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
       }
@@ -6244,15 +6500,40 @@
       "api"
     ],
     "routes": [
-      "/api/ext/weather/observations"
+      "/api/ext/weather/observations",
+      "/observations"
     ],
     "sourceProjects": [
+      "AIAgricultureAssistant",
+      "AIAquacultureFishFarm",
       "AIForestryTimberManagement"
     ],
     "consolidatedFromApps": [
+      "agriculture-natural-resources/agriculture-assistant",
       "agriculture-natural-resources/aquaculture-fish-farm"
     ],
     "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIAgricultureAssistant",
+        "path": "backend/routes/operationsWorkflow.js:9",
+        "route": "/observations",
+        "originApp": "agriculture-natural-resources/agriculture-assistant"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIAquacultureFishFarm",
+        "path": "backend/routes/governedOperations.js:2",
+        "route": "/observations",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIAquacultureFishFarm",
+        "path": "backend/routes/governedOperations.js:3",
+        "route": "/observations",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      },
       {
         "kind": "api",
         "sourceProject": "AIForestryTimberManagement",
@@ -6310,8 +6591,7 @@
       "AIMineralExplorationGeology",
       "AIMiningOperationsOptimizer",
       "AIWildlifeAntiPoachingOps",
-      "AIYieldPredictionMarketIntel",
-      "ai-low-pesticide-agriculture"
+      "AIYieldPredictionMarketIntel"
     ],
     "consolidatedFromApps": [
       "agriculture-natural-resources/agriculture-assistant",
@@ -6339,41 +6619,6 @@
         "path": "frontend/src/App.js:76",
         "route": "/codex/operations",
         "originApp": "agriculture-natural-resources/agriculture-assistant"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "ai-low-pesticide-agriculture",
-        "path": "frontend/src/App.tsx:51",
-        "route": "/codex/operations",
-        "originApp": "agriculture-natural-resources/agriculture-assistant"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AICropDiseasePestDetection",
-        "path": "frontend/src/App.jsx:87",
-        "route": "/codex/operations",
-        "originApp": "agriculture-natural-resources/mineral-exploration-geology"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIMineralExplorationGeology",
-        "path": "frontend/src/App.js:85",
-        "route": "/codex/operations",
-        "originApp": "agriculture-natural-resources/mineral-exploration-geology"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIWildlifeAntiPoachingOps",
-        "path": "frontend/src/App.js:88",
-        "route": "/codex/operations",
-        "originApp": "agriculture-natural-resources/mineral-exploration-geology"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIYieldPredictionMarketIntel",
-        "path": "frontend/src/App.js:56",
-        "route": "/codex/operations",
-        "originApp": "agriculture-natural-resources/mineral-exploration-geology"
       },
       {
         "kind": "page",
@@ -6409,6 +6654,34 @@
         "path": "frontend/src/App.js:46",
         "route": "/codex/operations",
         "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AICropDiseasePestDetection",
+        "path": "frontend/src/App.jsx:87",
+        "route": "/codex/operations",
+        "originApp": "agriculture-natural-resources/mineral-exploration-geology"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIMineralExplorationGeology",
+        "path": "frontend/src/App.js:85",
+        "route": "/codex/operations",
+        "originApp": "agriculture-natural-resources/mineral-exploration-geology"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIWildlifeAntiPoachingOps",
+        "path": "frontend/src/App.js:88",
+        "route": "/codex/operations",
+        "originApp": "agriculture-natural-resources/mineral-exploration-geology"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIYieldPredictionMarketIntel",
+        "path": "frontend/src/App.js:56",
+        "route": "/codex/operations",
+        "originApp": "agriculture-natural-resources/mineral-exploration-geology"
       }
     ]
   },
@@ -6949,7 +7222,7 @@
       {
         "kind": "api",
         "sourceProject": "AIFisheriesAquacultureManager",
-        "path": "server/routes/agenticFarmManager.js:22",
+        "path": "server/routes/agenticFarmManager.js:23",
         "route": "/recommend",
         "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
       },
@@ -6965,20 +7238,32 @@
   {
     "name": "Recommendations",
     "canonicalKey": "recommendation",
-    "aliases": [],
+    "aliases": [
+      "Recommendation"
+    ],
     "kinds": [
       "api"
     ],
     "routes": [
+      "/recommendation",
       "/recommendations"
     ],
     "sourceProjects": [
+      "AIAgricultureAssistant",
       "AIFisheriesAquacultureManager"
     ],
     "consolidatedFromApps": [
+      "agriculture-natural-resources/agriculture-assistant",
       "agriculture-natural-resources/aquaculture-fish-farm"
     ],
     "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIAgricultureAssistant",
+        "path": "backend/routes/runtimeAi.js:9",
+        "route": "/recommendation",
+        "originApp": "agriculture-natural-resources/agriculture-assistant"
+      },
       {
         "kind": "api",
         "sourceProject": "AIFisheriesAquacultureManager",
@@ -7037,7 +7322,7 @@
       {
         "kind": "api",
         "sourceProject": "AIForestryTimberManagement",
-        "path": "server/index.js:721",
+        "path": "server/index.js:642",
         "route": "/api/ai/reforestation-plan",
         "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
       },
@@ -7093,7 +7378,7 @@
       {
         "kind": "api",
         "sourceProject": "AIAgricultureAssistant",
-        "path": "backend/routes/auth.js:12",
+        "path": "backend/routes/auth.js:16",
         "route": "/register",
         "originApp": "agriculture-natural-resources/agriculture-assistant"
       },
@@ -7106,20 +7391,6 @@
       },
       {
         "kind": "api",
-        "sourceProject": "AICropDiseasePestDetection",
-        "path": "backend/server.js:116",
-        "route": "/api/auth/register",
-        "originApp": "agriculture-natural-resources/mineral-exploration-geology"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIYieldPredictionMarketIntel",
-        "path": "backend/src/routes/auth.js:41",
-        "route": "/register",
-        "originApp": "agriculture-natural-resources/mineral-exploration-geology"
-      },
-      {
-        "kind": "api",
         "sourceProject": "AIFisheriesAquacultureManager",
         "path": "server/routes/auth.js:9",
         "route": "/register",
@@ -7128,16 +7399,30 @@
       {
         "kind": "api",
         "sourceProject": "AIForestryTimberManagement",
-        "path": "server/index.js:151",
+        "path": "server/index.js:72",
         "route": "/api/auth/register",
         "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
       },
       {
         "kind": "api",
         "sourceProject": "AILivestockHealthMonitoring",
-        "path": "backend/routes/auth.js:24",
+        "path": "backend/routes/auth.js:32",
         "route": "/register",
         "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AICropDiseasePestDetection",
+        "path": "backend/server.js:117",
+        "route": "/api/auth/register",
+        "originApp": "agriculture-natural-resources/mineral-exploration-geology"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIYieldPredictionMarketIntel",
+        "path": "backend/src/routes/auth.js:47",
+        "route": "/register",
+        "originApp": "agriculture-natural-resources/mineral-exploration-geology"
       }
     ]
   },
@@ -7247,6 +7532,32 @@
     ]
   },
   {
+    "name": "Retire",
+    "canonicalKey": "retire",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/:id/retire"
+    ],
+    "sourceProjects": [
+      "AILivestockHealthMonitoring"
+    ],
+    "consolidatedFromApps": [
+      "agriculture-natural-resources/aquaculture-fish-farm"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AILivestockHealthMonitoring",
+        "path": "backend/governance/router.js:134",
+        "route": "/:id/retire",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      }
+    ]
+  },
+  {
     "name": "Risk Assessment",
     "canonicalKey": "assessment risk",
     "aliases": [],
@@ -7318,7 +7629,7 @@
       {
         "kind": "api",
         "sourceProject": "AIForestryTimberManagement",
-        "path": "server/index.js:651",
+        "path": "server/index.js:572",
         "route": "/api/ai/safety-incident-analysis",
         "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
       },
@@ -7475,7 +7786,7 @@
   },
   {
     "name": "Sea Lice Counts Classify",
-    "canonicalKey": "classify counts lice sea",
+    "canonicalKey": "classify count lice sea",
     "aliases": [],
     "kinds": [
       "api",
@@ -7639,7 +7950,7 @@
       {
         "kind": "page",
         "sourceProject": "ai-low-pesticide-agriculture",
-        "path": "frontend/src/App.tsx:66",
+        "path": "frontend/src/App.tsx:62",
         "route": "/sensors",
         "originApp": "agriculture-natural-resources/agriculture-assistant"
       },
@@ -7720,7 +8031,7 @@
   },
   {
     "name": "Species Identification",
-    "canonicalKey": "identification species",
+    "canonicalKey": "identification specy",
     "aliases": [],
     "kinds": [
       "api",
@@ -7741,7 +8052,7 @@
       {
         "kind": "api",
         "sourceProject": "AIForestryTimberManagement",
-        "path": "server/index.js:387",
+        "path": "server/index.js:308",
         "route": "/api/ai/species-identification",
         "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
       },
@@ -7815,15 +8126,8 @@
       },
       {
         "kind": "api",
-        "sourceProject": "AICropDiseasePestDetection",
-        "path": "backend/server.js:412",
-        "route": "/api/dashboard/stats",
-        "originApp": "agriculture-natural-resources/mineral-exploration-geology"
-      },
-      {
-        "kind": "api",
         "sourceProject": "AIForestryTimberManagement",
-        "path": "server/index.js:194",
+        "path": "server/index.js:115",
         "route": "/api/dashboard/stats",
         "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
       },
@@ -7833,6 +8137,13 @@
         "path": "backend/server.js:80",
         "route": "/api/dashboard/stats",
         "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AICropDiseasePestDetection",
+        "path": "backend/server.js:413",
+        "route": "/api/dashboard/stats",
+        "originApp": "agriculture-natural-resources/mineral-exploration-geology"
       }
     ]
   },
@@ -7860,13 +8171,6 @@
     "evidence": [
       {
         "kind": "api",
-        "sourceProject": "AIWildlifeAntiPoachingOps",
-        "path": "backend/routes/partnerStubs.js:53",
-        "route": "/smart-patrol/status",
-        "originApp": "agriculture-natural-resources/mineral-exploration-geology"
-      },
-      {
-        "kind": "api",
         "sourceProject": "AIForestryTimberManagement",
         "path": "server/extensions.js:100",
         "route": "/api/ext/satellite/status",
@@ -7885,6 +8189,13 @@
         "path": "server/extensions.js:162",
         "route": "/api/ext/registries/status",
         "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIWildlifeAntiPoachingOps",
+        "path": "backend/routes/partnerStubs.js:53",
+        "route": "/smart-patrol/status",
+        "originApp": "agriculture-natural-resources/mineral-exploration-geology"
       }
     ]
   },
@@ -7991,13 +8302,15 @@
       "api"
     ],
     "routes": [
+      "/:id/submit",
       "/api/ext/registries/submit",
       "/blockchain/submit",
       "/certification/submit"
     ],
     "sourceProjects": [
       "AIFisheriesAquacultureManager",
-      "AIForestryTimberManagement"
+      "AIForestryTimberManagement",
+      "AILivestockHealthMonitoring"
     ],
     "consolidatedFromApps": [
       "agriculture-natural-resources/aquaculture-fish-farm"
@@ -8022,6 +8335,20 @@
         "sourceProject": "AIForestryTimberManagement",
         "path": "server/extensions.js:173",
         "route": "/api/ext/registries/submit",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIForestryTimberManagement",
+        "path": "server/routes/governedFieldPlans.js:7",
+        "route": "/:id/submit",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AILivestockHealthMonitoring",
+        "path": "backend/governance/router.js:93",
+        "route": "/:id/submit",
         "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
       }
     ]
@@ -8176,7 +8503,7 @@
       {
         "kind": "api",
         "sourceProject": "AIForestryTimberManagement",
-        "path": "server/index.js:591",
+        "path": "server/index.js:512",
         "route": "/api/ai/timber-market-alert",
         "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
       },
@@ -8312,32 +8639,6 @@
     ]
   },
   {
-    "name": "Transition",
-    "canonicalKey": "transition",
-    "aliases": [],
-    "kinds": [
-      "api"
-    ],
-    "routes": [
-      "/api/ext/permits/:id/transition"
-    ],
-    "sourceProjects": [
-      "AIForestryTimberManagement"
-    ],
-    "consolidatedFromApps": [
-      "agriculture-natural-resources/aquaculture-fish-farm"
-    ],
-    "evidence": [
-      {
-        "kind": "api",
-        "sourceProject": "AIForestryTimberManagement",
-        "path": "server/extensions.js:230",
-        "route": "/api/ext/permits/:id/transition",
-        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
-      }
-    ]
-  },
-  {
     "name": "Treatment Recommend",
     "canonicalKey": "recommend treatment",
     "aliases": [],
@@ -8375,41 +8676,6 @@
         "sourceProject": "AIAquacultureFishFarm",
         "path": "frontend/src/pages/Dashboard.js:29",
         "route": "/ai/treatment-recommend",
-        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
-      }
-    ]
-  },
-  {
-    "name": "Treatments Page",
-    "canonicalKey": "treatments",
-    "aliases": [],
-    "kinds": [
-      "page"
-    ],
-    "routes": [
-      "/TreatmentsPage"
-    ],
-    "sourceProjects": [
-      "AIAquacultureFishFarm",
-      "AIBeekeepingApiary"
-    ],
-    "consolidatedFromApps": [
-      "agriculture-natural-resources/agriculture-assistant",
-      "agriculture-natural-resources/aquaculture-fish-farm"
-    ],
-    "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "AIBeekeepingApiary",
-        "path": "frontend/src/pages/TreatmentsPage.js",
-        "route": "/TreatmentsPage",
-        "originApp": "agriculture-natural-resources/agriculture-assistant"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIAquacultureFishFarm",
-        "path": "frontend/src/pages/TreatmentsPage.js",
-        "route": "/TreatmentsPage",
         "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
       }
     ]
@@ -8937,7 +9203,7 @@
       {
         "kind": "api",
         "sourceProject": "AIForestryTimberManagement",
-        "path": "server/index.js:335",
+        "path": "server/index.js:256",
         "route": "/api/weather-alerts",
         "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
       }
@@ -9087,7 +9353,7 @@
       {
         "kind": "api",
         "sourceProject": "AIForestryTimberManagement",
-        "path": "server/index.js:459",
+        "path": "server/index.js:380",
         "route": "/api/ai/wildfire-risk",
         "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
       },
@@ -9160,7 +9426,7 @@
       {
         "kind": "api",
         "sourceProject": "AIForestryTimberManagement",
-        "path": "server/index.js:625",
+        "path": "server/index.js:546",
         "route": "/api/ai/wildfire-weather-scan",
         "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
       },

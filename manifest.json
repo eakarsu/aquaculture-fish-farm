@@ -11,10 +11,10 @@
     "AIForestryTimberManagement",
     "AILivestockHealthMonitoring"
   ],
-  "featureCount": 244,
-  "candidateFeatureCount": 338,
-  "eliminatedSimilarFeatures": 94,
-  "evidenceCount": 607,
+  "featureCount": 252,
+  "candidateFeatureCount": 353,
+  "eliminatedSimilarFeatures": 101,
+  "evidenceCount": 622,
   "aiPageCount": 20,
   "sourceAIPageCount": 21,
   "featureEvidencePolicy": "Existing source routes, pages, APIs, models, schemas, and navigation only",
@@ -22,9 +22,9 @@
   "database": "database.sqlite",
   "databaseSeed": {
     "seededProjects": 2,
-    "seededTables": 31,
-    "seededRows": 465
+    "seededTables": 30,
+    "seededRows": 450
   },
-  "visibleFeatureCount": 62,
+  "visibleFeatureCount": 63,
   "featureVisibilityMode": "seeded-or-ai"
 }
