@@ -160,11 +160,42 @@
   {
     "name": "AI Biomass Forecast",
     "canonicalKey": "ai biomass forecast",
-    "aliases": [
-      "AI Biomass Forecast Page"
-    ],
+    "aliases": [],
     "kinds": [
-      "navigation",
+      "ai-page",
+      "navigation"
+    ],
+    "routes": [
+      "/ai/biomass-forecast"
+    ],
+    "sourceProjects": [
+      "AIAquacultureFishFarm"
+    ],
+    "consolidatedFromApps": [
+      "agriculture-natural-resources/aquaculture-fish-farm"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIAquacultureFishFarm",
+        "path": "frontend/src/pages/AIBiomassForecastPage.js",
+        "route": "/ai/biomass-forecast",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIAquacultureFishFarm",
+        "path": "frontend/src/components/Sidebar.js:46",
+        "route": "",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      }
+    ]
+  },
+  {
+    "name": "AI Biomass Forecast Page",
+    "canonicalKey": "ai biomass forecast",
+    "aliases": [],
+    "kinds": [
       "page"
     ],
     "routes": [
@@ -177,13 +208,6 @@
       "agriculture-natural-resources/aquaculture-fish-farm"
     ],
     "evidence": [
-      {
-        "kind": "navigation",
-        "sourceProject": "AIAquacultureFishFarm",
-        "path": "frontend/src/components/Sidebar.js:46",
-        "route": "",
-        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
-      },
       {
         "kind": "page",
         "sourceProject": "AIAquacultureFishFarm",
@@ -230,6 +254,32 @@
     ]
   },
   {
+    "name": "AI Biomass Vision Estimate",
+    "canonicalKey": "ai biomass estimate vision",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/biomass-vision-estimate"
+    ],
+    "sourceProjects": [
+      "AIAquacultureFishFarm"
+    ],
+    "consolidatedFromApps": [
+      "agriculture-natural-resources/aquaculture-fish-farm"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIAquacultureFishFarm",
+        "path": "frontend/src/pages/AIBiomassVisionPage.js",
+        "route": "/ai/biomass-vision-estimate",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      }
+    ]
+  },
+  {
     "name": "AI Cert Readiness",
     "canonicalKey": "ai cert readiness",
     "aliases": [],
@@ -249,6 +299,32 @@
         "sourceProject": "AIAquacultureFishFarm",
         "path": "frontend/src/components/Sidebar.js:69",
         "route": "",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      }
+    ]
+  },
+  {
+    "name": "AI Certification Readiness",
+    "canonicalKey": "ai certification readiness",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/certification-readiness"
+    ],
+    "sourceProjects": [
+      "AIAquacultureFishFarm"
+    ],
+    "consolidatedFromApps": [
+      "agriculture-natural-resources/aquaculture-fish-farm"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIAquacultureFishFarm",
+        "path": "frontend/src/pages/AICertificationReadinessPage.js",
+        "route": "/ai/certification-readiness",
         "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
       }
     ]
@@ -316,13 +392,15 @@
     ]
   },
   {
-    "name": "AI Diver Safety Brief",
-    "canonicalKey": "ai brief diver safety",
+    "name": "AI Customer Quality Report",
+    "canonicalKey": "ai customer quality report",
     "aliases": [],
     "kinds": [
-      "navigation"
+      "ai-page"
     ],
-    "routes": [],
+    "routes": [
+      "/ai/customer-quality-report"
+    ],
     "sourceProjects": [
       "AIAquacultureFishFarm"
     ],
@@ -330,6 +408,40 @@
       "agriculture-natural-resources/aquaculture-fish-farm"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIAquacultureFishFarm",
+        "path": "frontend/src/pages/AICustomerQualityPage.js",
+        "route": "/ai/customer-quality-report",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      }
+    ]
+  },
+  {
+    "name": "AI Diver Safety Brief",
+    "canonicalKey": "ai brief diver safety",
+    "aliases": [],
+    "kinds": [
+      "ai-page",
+      "navigation"
+    ],
+    "routes": [
+      "/ai/diver-safety-brief"
+    ],
+    "sourceProjects": [
+      "AIAquacultureFishFarm"
+    ],
+    "consolidatedFromApps": [
+      "agriculture-natural-resources/aquaculture-fish-farm"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIAquacultureFishFarm",
+        "path": "frontend/src/pages/AIDiverSafetyPage.js",
+        "route": "/ai/diver-safety-brief",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      },
       {
         "kind": "navigation",
         "sourceProject": "AIAquacultureFishFarm",
@@ -361,6 +473,67 @@
         "sourceProject": "AIAquacultureFishFarm",
         "path": "frontend/src/pages/AIDiverSafetyPage.js",
         "route": "/AIDiverSafetyPage",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      }
+    ]
+  },
+  {
+    "name": "AI Environmental Risk Brief",
+    "canonicalKey": "ai brief environmental risk",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/environmental-risk-brief"
+    ],
+    "sourceProjects": [
+      "AIAquacultureFishFarm"
+    ],
+    "consolidatedFromApps": [
+      "agriculture-natural-resources/aquaculture-fish-farm"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIAquacultureFishFarm",
+        "path": "frontend/src/pages/AIEnvironmentalRiskPage.js",
+        "route": "/ai/environmental-risk-brief",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      }
+    ]
+  },
+  {
+    "name": "AI Equipment Maintenance",
+    "canonicalKey": "ai equipment maintenance",
+    "aliases": [],
+    "kinds": [
+      "ai-page",
+      "page"
+    ],
+    "routes": [
+      "/AIEquipmentMaintenance",
+      "/ai/equipment-maintenance"
+    ],
+    "sourceProjects": [
+      "AIForestryTimberManagement"
+    ],
+    "consolidatedFromApps": [
+      "agriculture-natural-resources/aquaculture-fish-farm"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIForestryTimberManagement",
+        "path": "client/src/pages/AIEquipmentMaintenance.jsx:1",
+        "route": "/ai/equipment-maintenance",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIForestryTimberManagement",
+        "path": "client/src/pages/AIEquipmentMaintenance.jsx",
+        "route": "/AIEquipmentMaintenance",
         "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
       }
     ]
@@ -402,6 +575,40 @@
     ]
   },
   {
+    "name": "AI Executive Brief",
+    "canonicalKey": "ai brief executive",
+    "aliases": [],
+    "kinds": [
+      "ai-page",
+      "navigation"
+    ],
+    "routes": [
+      "/ai/executive-brief"
+    ],
+    "sourceProjects": [
+      "AIAquacultureFishFarm"
+    ],
+    "consolidatedFromApps": [
+      "agriculture-natural-resources/aquaculture-fish-farm"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIAquacultureFishFarm",
+        "path": "frontend/src/pages/AIExecutiveBriefPage.js",
+        "route": "/ai/executive-brief",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIAquacultureFishFarm",
+        "path": "frontend/src/components/Sidebar.js:54",
+        "route": "",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      }
+    ]
+  },
+  {
     "name": "AI Feed Conversion",
     "canonicalKey": "ai conversion feed",
     "aliases": [
@@ -438,13 +645,70 @@
     ]
   },
   {
+    "name": "AI Feed Conversion Optimize",
+    "canonicalKey": "ai conversion feed optimize",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/feed-conversion-optimize"
+    ],
+    "sourceProjects": [
+      "AIAquacultureFishFarm"
+    ],
+    "consolidatedFromApps": [
+      "agriculture-natural-resources/aquaculture-fish-farm"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIAquacultureFishFarm",
+        "path": "frontend/src/pages/AIFeedConversionPage.js",
+        "route": "/ai/feed-conversion-optimize",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      }
+    ]
+  },
+  {
     "name": "AI Fish Health Diagnostic",
     "canonicalKey": "ai diagnostic fish health",
-    "aliases": [
-      "AI Fish Health Diagnostic Page"
-    ],
+    "aliases": [],
     "kinds": [
-      "navigation",
+      "ai-page",
+      "navigation"
+    ],
+    "routes": [
+      "/ai/fish-health-diagnostic"
+    ],
+    "sourceProjects": [
+      "AIAquacultureFishFarm"
+    ],
+    "consolidatedFromApps": [
+      "agriculture-natural-resources/aquaculture-fish-farm"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIAquacultureFishFarm",
+        "path": "frontend/src/pages/AIFishHealthDiagnosticPage.js",
+        "route": "/ai/fish-health-diagnostic",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIAquacultureFishFarm",
+        "path": "frontend/src/components/Sidebar.js:59",
+        "route": "",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      }
+    ]
+  },
+  {
+    "name": "AI Fish Health Diagnostic Page",
+    "canonicalKey": "ai diagnostic fish health",
+    "aliases": [],
+    "kinds": [
       "page"
     ],
     "routes": [
@@ -458,13 +722,6 @@
     ],
     "evidence": [
       {
-        "kind": "navigation",
-        "sourceProject": "AIAquacultureFishFarm",
-        "path": "frontend/src/components/Sidebar.js:59",
-        "route": "",
-        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
-      },
-      {
         "kind": "page",
         "sourceProject": "AIAquacultureFishFarm",
         "path": "frontend/src/pages/AIFishHealthDiagnosticPage.js",
@@ -476,11 +733,42 @@
   {
     "name": "AI Harvest Schedule",
     "canonicalKey": "ai harvest schedule",
-    "aliases": [
-      "AI Harvest Schedule Page"
-    ],
+    "aliases": [],
     "kinds": [
-      "navigation",
+      "ai-page",
+      "navigation"
+    ],
+    "routes": [
+      "/ai/harvest-schedule"
+    ],
+    "sourceProjects": [
+      "AIAquacultureFishFarm"
+    ],
+    "consolidatedFromApps": [
+      "agriculture-natural-resources/aquaculture-fish-farm"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIAquacultureFishFarm",
+        "path": "frontend/src/pages/AIHarvestSchedulePage.js",
+        "route": "/ai/harvest-schedule",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIAquacultureFishFarm",
+        "path": "frontend/src/components/Sidebar.js:61",
+        "route": "",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      }
+    ]
+  },
+  {
+    "name": "AI Harvest Schedule Page",
+    "canonicalKey": "ai harvest schedule",
+    "aliases": [],
+    "kinds": [
       "page"
     ],
     "routes": [
@@ -494,13 +782,6 @@
     ],
     "evidence": [
       {
-        "kind": "navigation",
-        "sourceProject": "AIAquacultureFishFarm",
-        "path": "frontend/src/components/Sidebar.js:61",
-        "route": "",
-        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
-      },
-      {
         "kind": "page",
         "sourceProject": "AIAquacultureFishFarm",
         "path": "frontend/src/pages/AIHarvestSchedulePage.js",
@@ -512,11 +793,42 @@
   {
     "name": "AI Harvest Timing",
     "canonicalKey": "ai harvest timing",
-    "aliases": [
-      "AI Harvest Timing Page"
-    ],
+    "aliases": [],
     "kinds": [
-      "navigation",
+      "ai-page",
+      "navigation"
+    ],
+    "routes": [
+      "/ai/harvest-timing"
+    ],
+    "sourceProjects": [
+      "AIAquacultureFishFarm"
+    ],
+    "consolidatedFromApps": [
+      "agriculture-natural-resources/aquaculture-fish-farm"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIAquacultureFishFarm",
+        "path": "frontend/src/pages/AIHarvestTimingPage.js",
+        "route": "/ai/harvest-timing",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIAquacultureFishFarm",
+        "path": "frontend/src/components/Sidebar.js:62",
+        "route": "",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      }
+    ]
+  },
+  {
+    "name": "AI Harvest Timing Page",
+    "canonicalKey": "ai harvest timing",
+    "aliases": [],
+    "kinds": [
       "page"
     ],
     "routes": [
@@ -530,13 +842,6 @@
     ],
     "evidence": [
       {
-        "kind": "navigation",
-        "sourceProject": "AIAquacultureFishFarm",
-        "path": "frontend/src/components/Sidebar.js:62",
-        "route": "",
-        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
-      },
-      {
         "kind": "page",
         "sourceProject": "AIAquacultureFishFarm",
         "path": "frontend/src/pages/AIHarvestTimingPage.js",
@@ -548,11 +853,42 @@
   {
     "name": "AI Market Price Forecast",
     "canonicalKey": "ai forecast market price",
-    "aliases": [
-      "AI Market Price Forecast Page"
-    ],
+    "aliases": [],
     "kinds": [
-      "navigation",
+      "ai-page",
+      "navigation"
+    ],
+    "routes": [
+      "/ai/market-price-forecast"
+    ],
+    "sourceProjects": [
+      "AIAquacultureFishFarm"
+    ],
+    "consolidatedFromApps": [
+      "agriculture-natural-resources/aquaculture-fish-farm"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIAquacultureFishFarm",
+        "path": "frontend/src/pages/AIMarketPriceForecastPage.js",
+        "route": "/ai/market-price-forecast",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIAquacultureFishFarm",
+        "path": "frontend/src/components/Sidebar.js:71",
+        "route": "",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      }
+    ]
+  },
+  {
+    "name": "AI Market Price Forecast Page",
+    "canonicalKey": "ai forecast market price",
+    "aliases": [],
+    "kinds": [
       "page"
     ],
     "routes": [
@@ -565,13 +901,6 @@
       "agriculture-natural-resources/aquaculture-fish-farm"
     ],
     "evidence": [
-      {
-        "kind": "navigation",
-        "sourceProject": "AIAquacultureFishFarm",
-        "path": "frontend/src/components/Sidebar.js:71",
-        "route": "",
-        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
-      },
       {
         "kind": "page",
         "sourceProject": "AIAquacultureFishFarm",
@@ -618,13 +947,70 @@
     ]
   },
   {
+    "name": "AI Mortality Anomaly Detect",
+    "canonicalKey": "ai anomaly detect mortality",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/mortality-anomaly-detect"
+    ],
+    "sourceProjects": [
+      "AIAquacultureFishFarm"
+    ],
+    "consolidatedFromApps": [
+      "agriculture-natural-resources/aquaculture-fish-farm"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIAquacultureFishFarm",
+        "path": "frontend/src/pages/AIMortalityAnomalyPage.js",
+        "route": "/ai/mortality-anomaly-detect",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      }
+    ]
+  },
+  {
     "name": "AI Mortality Predict",
     "canonicalKey": "ai mortality predict",
-    "aliases": [
-      "AI Mortality Predict Page"
-    ],
+    "aliases": [],
     "kinds": [
-      "navigation",
+      "ai-page",
+      "navigation"
+    ],
+    "routes": [
+      "/ai/mortality-predict"
+    ],
+    "sourceProjects": [
+      "AIAquacultureFishFarm"
+    ],
+    "consolidatedFromApps": [
+      "agriculture-natural-resources/aquaculture-fish-farm"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIAquacultureFishFarm",
+        "path": "frontend/src/pages/AIMortalityPredictPage.js",
+        "route": "/ai/mortality-predict",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIAquacultureFishFarm",
+        "path": "frontend/src/components/Sidebar.js:49",
+        "route": "",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      }
+    ]
+  },
+  {
+    "name": "AI Mortality Predict Page",
+    "canonicalKey": "ai mortality predict",
+    "aliases": [],
+    "kinds": [
       "page"
     ],
     "routes": [
@@ -637,13 +1023,6 @@
       "agriculture-natural-resources/aquaculture-fish-farm"
     ],
     "evidence": [
-      {
-        "kind": "navigation",
-        "sourceProject": "AIAquacultureFishFarm",
-        "path": "frontend/src/components/Sidebar.js:49",
-        "route": "",
-        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
-      },
       {
         "kind": "page",
         "sourceProject": "AIAquacultureFishFarm",
@@ -682,11 +1061,42 @@
   {
     "name": "AI Pen Camera Analyze",
     "canonicalKey": "ai analyze camera pen",
-    "aliases": [
-      "AI Pen Camera Analyze Page"
-    ],
+    "aliases": [],
     "kinds": [
-      "navigation",
+      "ai-page",
+      "navigation"
+    ],
+    "routes": [
+      "/ai/pen-camera-analyze"
+    ],
+    "sourceProjects": [
+      "AIAquacultureFishFarm"
+    ],
+    "consolidatedFromApps": [
+      "agriculture-natural-resources/aquaculture-fish-farm"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIAquacultureFishFarm",
+        "path": "frontend/src/pages/AIPenCameraAnalyzePage.js",
+        "route": "/ai/pen-camera-analyze",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIAquacultureFishFarm",
+        "path": "frontend/src/components/Sidebar.js:52",
+        "route": "",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      }
+    ]
+  },
+  {
+    "name": "AI Pen Camera Analyze Page",
+    "canonicalKey": "ai analyze camera pen",
+    "aliases": [],
+    "kinds": [
       "page"
     ],
     "routes": [
@@ -699,13 +1109,6 @@
       "agriculture-natural-resources/aquaculture-fish-farm"
     ],
     "evidence": [
-      {
-        "kind": "navigation",
-        "sourceProject": "AIAquacultureFishFarm",
-        "path": "frontend/src/components/Sidebar.js:52",
-        "route": "",
-        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
-      },
       {
         "kind": "page",
         "sourceProject": "AIAquacultureFishFarm",
@@ -747,6 +1150,32 @@
         "sourceProject": "AIAquacultureFishFarm",
         "path": "frontend/src/pages/AIPredatorDeterrentPage.js",
         "route": "/AIPredatorDeterrentPage",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      }
+    ]
+  },
+  {
+    "name": "AI Predator Deterrent Plan",
+    "canonicalKey": "ai deterrent plan predator",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/predator-deterrent-plan"
+    ],
+    "sourceProjects": [
+      "AIAquacultureFishFarm"
+    ],
+    "consolidatedFromApps": [
+      "agriculture-natural-resources/aquaculture-fish-farm"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIAquacultureFishFarm",
+        "path": "frontend/src/pages/AIPredatorDeterrentPage.js",
+        "route": "/ai/predator-deterrent-plan",
         "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
       }
     ]
@@ -806,37 +1235,27 @@
   {
     "name": "AI Results",
     "canonicalKey": "ai result",
-    "aliases": [
-      "AI Results Page"
-    ],
+    "aliases": [],
     "kinds": [
+      "ai-page",
       "api",
       "navigation",
       "page"
     ],
     "routes": [
-      "/AIResultsPage",
       "/AiResults",
       "/ai-results",
+      "/ai/growth-prediction?tool=ai-results",
       "/api/ai-results"
     ],
     "sourceProjects": [
-      "AIAgricultureAssistant",
       "AIFisheriesAquacultureManager",
       "AIForestryTimberManagement"
     ],
     "consolidatedFromApps": [
-      "agriculture-natural-resources/agriculture-assistant",
       "agriculture-natural-resources/aquaculture-fish-farm"
     ],
     "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "AIAgricultureAssistant",
-        "path": "frontend/src/pages/AIResultsPage.jsx",
-        "route": "/AIResultsPage",
-        "originApp": "agriculture-natural-resources/agriculture-assistant"
-      },
       {
         "kind": "page",
         "sourceProject": "AIFisheriesAquacultureManager",
@@ -856,6 +1275,13 @@
         "sourceProject": "AIFisheriesAquacultureManager",
         "path": "client/src/pages/AiResults.js",
         "route": "/AiResults",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      },
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIForestryTimberManagement",
+        "path": "client/src/pages/FeaturePage.jsx:221",
+        "route": "/ai/growth-prediction?tool=ai-results",
         "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
       },
       {
@@ -925,6 +1351,32 @@
     ]
   },
   {
+    "name": "AI Sea Lice Counts Classify",
+    "canonicalKey": "ai classify count lice sea",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/sea-lice-counts-classify"
+    ],
+    "sourceProjects": [
+      "AIAquacultureFishFarm"
+    ],
+    "consolidatedFromApps": [
+      "agriculture-natural-resources/aquaculture-fish-farm"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIAquacultureFishFarm",
+        "path": "frontend/src/pages/AISeaLiceClassifyPage.js",
+        "route": "/ai/sea-lice-counts-classify",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      }
+    ]
+  },
+  {
     "name": "AI Stocking Density Risk",
     "canonicalKey": "ai density risk stocking",
     "aliases": [
@@ -963,11 +1415,42 @@
   {
     "name": "AI Sustainability Score",
     "canonicalKey": "ai score sustainability",
-    "aliases": [
-      "AI Sustainability Score Page"
-    ],
+    "aliases": [],
     "kinds": [
-      "navigation",
+      "ai-page",
+      "navigation"
+    ],
+    "routes": [
+      "/ai/sustainability-score"
+    ],
+    "sourceProjects": [
+      "AIAquacultureFishFarm"
+    ],
+    "consolidatedFromApps": [
+      "agriculture-natural-resources/aquaculture-fish-farm"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIAquacultureFishFarm",
+        "path": "frontend/src/pages/AISustainabilityScorePage.js",
+        "route": "/ai/sustainability-score",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIAquacultureFishFarm",
+        "path": "frontend/src/components/Sidebar.js:65",
+        "route": "",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      }
+    ]
+  },
+  {
+    "name": "AI Sustainability Score Page",
+    "canonicalKey": "ai score sustainability",
+    "aliases": [],
+    "kinds": [
       "page"
     ],
     "routes": [
@@ -980,13 +1463,6 @@
       "agriculture-natural-resources/aquaculture-fish-farm"
     ],
     "evidence": [
-      {
-        "kind": "navigation",
-        "sourceProject": "AIAquacultureFishFarm",
-        "path": "frontend/src/components/Sidebar.js:65",
-        "route": "",
-        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
-      },
       {
         "kind": "page",
         "sourceProject": "AIAquacultureFishFarm",
@@ -1093,11 +1569,42 @@
   {
     "name": "AI Treatment Recommend",
     "canonicalKey": "ai recommend treatment",
-    "aliases": [
-      "AI Treatment Recommend Page"
-    ],
+    "aliases": [],
     "kinds": [
-      "navigation",
+      "ai-page",
+      "navigation"
+    ],
+    "routes": [
+      "/ai/treatment-recommend"
+    ],
+    "sourceProjects": [
+      "AIAquacultureFishFarm"
+    ],
+    "consolidatedFromApps": [
+      "agriculture-natural-resources/aquaculture-fish-farm"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIAquacultureFishFarm",
+        "path": "frontend/src/pages/AITreatmentRecommendPage.js",
+        "route": "/ai/treatment-recommend",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIAquacultureFishFarm",
+        "path": "frontend/src/components/Sidebar.js:60",
+        "route": "",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      }
+    ]
+  },
+  {
+    "name": "AI Treatment Recommend Page",
+    "canonicalKey": "ai recommend treatment",
+    "aliases": [],
+    "kinds": [
       "page"
     ],
     "routes": [
@@ -1110,13 +1617,6 @@
       "agriculture-natural-resources/aquaculture-fish-farm"
     ],
     "evidence": [
-      {
-        "kind": "navigation",
-        "sourceProject": "AIAquacultureFishFarm",
-        "path": "frontend/src/components/Sidebar.js:60",
-        "route": "",
-        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
-      },
       {
         "kind": "page",
         "sourceProject": "AIAquacultureFishFarm",
@@ -1172,6 +1672,32 @@
     ]
   },
   {
+    "name": "AI Vendor Quality Score",
+    "canonicalKey": "ai quality score vendor",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/vendor-quality-score"
+    ],
+    "sourceProjects": [
+      "AIAquacultureFishFarm"
+    ],
+    "consolidatedFromApps": [
+      "agriculture-natural-resources/aquaculture-fish-farm"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIAquacultureFishFarm",
+        "path": "frontend/src/pages/AIVendorQualityPage.js",
+        "route": "/ai/vendor-quality-score",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      }
+    ]
+  },
+  {
     "name": "AI Vessel Shift Page",
     "canonicalKey": "ai shift vessel",
     "aliases": [],
@@ -1202,9 +1728,12 @@
     "canonicalKey": "ai schedule shift vessel",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "navigation"
     ],
-    "routes": [],
+    "routes": [
+      "/ai/vessel-shift-schedule"
+    ],
     "sourceProjects": [
       "AIAquacultureFishFarm"
     ],
@@ -1212,6 +1741,13 @@
       "agriculture-natural-resources/aquaculture-fish-farm"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIAquacultureFishFarm",
+        "path": "frontend/src/pages/AIVesselShiftPage.js",
+        "route": "/ai/vessel-shift-schedule",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      },
       {
         "kind": "navigation",
         "sourceProject": "AIAquacultureFishFarm",
@@ -1224,11 +1760,42 @@
   {
     "name": "AI Water Quality Anomaly",
     "canonicalKey": "ai anomaly quality water",
-    "aliases": [
-      "AI Water Quality Anomaly Page"
-    ],
+    "aliases": [],
     "kinds": [
-      "navigation",
+      "ai-page",
+      "navigation"
+    ],
+    "routes": [
+      "/ai/water-quality-anomaly"
+    ],
+    "sourceProjects": [
+      "AIAquacultureFishFarm"
+    ],
+    "consolidatedFromApps": [
+      "agriculture-natural-resources/aquaculture-fish-farm"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIAquacultureFishFarm",
+        "path": "frontend/src/pages/AIWaterQualityAnomalyPage.js",
+        "route": "/ai/water-quality-anomaly",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIAquacultureFishFarm",
+        "path": "frontend/src/components/Sidebar.js:50",
+        "route": "",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      }
+    ]
+  },
+  {
+    "name": "AI Water Quality Anomaly Page",
+    "canonicalKey": "ai anomaly quality water",
+    "aliases": [],
+    "kinds": [
       "page"
     ],
     "routes": [
@@ -1242,17 +1809,67 @@
     ],
     "evidence": [
       {
-        "kind": "navigation",
-        "sourceProject": "AIAquacultureFishFarm",
-        "path": "frontend/src/components/Sidebar.js:50",
-        "route": "",
-        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
-      },
-      {
         "kind": "page",
         "sourceProject": "AIAquacultureFishFarm",
         "path": "frontend/src/pages/AIWaterQualityAnomalyPage.js",
         "route": "/AIWaterQualityAnomalyPage",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      }
+    ]
+  },
+  {
+    "name": "Analyze",
+    "canonicalKey": "analyze",
+    "aliases": [],
+    "kinds": [
+      "ai-page",
+      "api"
+    ],
+    "routes": [
+      "/:id/analyze",
+      "/analyze",
+      "/weather?tool=analyze"
+    ],
+    "sourceProjects": [
+      "AIFisheriesAquacultureManager"
+    ],
+    "consolidatedFromApps": [
+      "agriculture-natural-resources/aquaculture-fish-farm"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIFisheriesAquacultureManager",
+        "path": "client/src/pages/WeatherAnalysis.js:38",
+        "route": "/weather?tool=analyze",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIFisheriesAquacultureManager",
+        "path": "server/routes/fishStock.js:70",
+        "route": "/:id/analyze",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIFisheriesAquacultureManager",
+        "path": "server/routes/growthAnalysis.js:70",
+        "route": "/:id/analyze",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIFisheriesAquacultureManager",
+        "path": "server/routes/waterQuality.js:70",
+        "route": "/:id/analyze",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIFisheriesAquacultureManager",
+        "path": "server/routes/weatherAnalysis.js:43",
+        "route": "/analyze",
         "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
       }
     ]
@@ -1596,9 +2213,11 @@
     "canonicalKey": "advisor breeding",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai-tools?tool=breeding-advisor",
       "/breeding-advisor"
     ],
     "sourceProjects": [
@@ -1608,6 +2227,13 @@
       "agriculture-natural-resources/aquaculture-fish-farm"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AILivestockHealthMonitoring",
+        "path": "frontend/src/pages/AIToolsPage.js:25",
+        "route": "/ai-tools?tool=breeding-advisor",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      },
       {
         "kind": "api",
         "sourceProject": "AILivestockHealthMonitoring",
@@ -2208,12 +2834,14 @@
     "canonicalKey": "compliance review",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api",
       "navigation",
       "page"
     ],
     "routes": [
       "/ai/compliance-review",
+      "/ai/compliance-review?tool=compliance-review",
       "/api/ai/compliance-review"
     ],
     "sourceProjects": [
@@ -2223,6 +2851,13 @@
       "agriculture-natural-resources/aquaculture-fish-farm"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIForestryTimberManagement",
+        "path": "client/src/pages/AIToolsPage.jsx:57",
+        "route": "/ai/compliance-review?tool=compliance-review",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      },
       {
         "kind": "api",
         "sourceProject": "AIForestryTimberManagement",
@@ -2982,9 +3617,11 @@
     "canonicalKey": "check disease outbreak",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai/compliance-review?tool=disease-outbreak",
       "/api/ai/disease-outbreak-check"
     ],
     "sourceProjects": [
@@ -2994,6 +3631,13 @@
       "agriculture-natural-resources/aquaculture-fish-farm"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIForestryTimberManagement",
+        "path": "client/src/pages/AIToolsPage.jsx:7",
+        "route": "/ai/compliance-review?tool=disease-outbreak",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      },
       {
         "kind": "api",
         "sourceProject": "AIForestryTimberManagement",
@@ -3056,9 +3700,11 @@
     "canonicalKey": "assessment disease risk",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai-tools?tool=disease-risk-assessment",
       "/disease-risk-assessment"
     ],
     "sourceProjects": [
@@ -3068,6 +3714,13 @@
       "agriculture-natural-resources/aquaculture-fish-farm"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AILivestockHealthMonitoring",
+        "path": "frontend/src/pages/AIToolsPage.js:14",
+        "route": "/ai-tools?tool=disease-risk-assessment",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      },
       {
         "kind": "api",
         "sourceProject": "AILivestockHealthMonitoring",
@@ -3201,9 +3854,11 @@
     "canonicalKey": "economic forecaster",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai-tools?tool=economic-forecaster",
       "/economic-forecaster"
     ],
     "sourceProjects": [
@@ -3213,6 +3868,13 @@
       "agriculture-natural-resources/aquaculture-fish-farm"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AILivestockHealthMonitoring",
+        "path": "frontend/src/pages/AIToolsPage.js:59",
+        "route": "/ai-tools?tool=economic-forecaster",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      },
       {
         "kind": "api",
         "sourceProject": "AILivestockHealthMonitoring",
@@ -4958,6 +5620,32 @@
     ]
   },
   {
+    "name": "Gis Harvest Block Planner",
+    "canonicalKey": "block gis harvest planner",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/compliance-review?tool=gis-harvest-blocks"
+    ],
+    "sourceProjects": [
+      "AIForestryTimberManagement"
+    ],
+    "consolidatedFromApps": [
+      "agriculture-natural-resources/aquaculture-fish-farm"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIForestryTimberManagement",
+        "path": "client/src/pages/AIToolsPage.jsx:21",
+        "route": "/ai/compliance-review?tool=gis-harvest-blocks",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      }
+    ]
+  },
+  {
     "name": "Gis Harvest Blocks",
     "canonicalKey": "block gis harvest",
     "aliases": [],
@@ -5429,9 +6117,11 @@
     "canonicalKey": "anomaly detector health",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai-tools?tool=health-anomaly-detector",
       "/health-anomaly-detector"
     ],
     "sourceProjects": [
@@ -5441,6 +6131,13 @@
       "agriculture-natural-resources/aquaculture-fish-farm"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AILivestockHealthMonitoring",
+        "path": "frontend/src/pages/AIToolsPage.js:36",
+        "route": "/ai-tools?tool=health-anomaly-detector",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      },
       {
         "kind": "api",
         "sourceProject": "AILivestockHealthMonitoring",
@@ -6471,9 +7168,11 @@
     "canonicalKey": "nutrition optimizer",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai-tools?tool=nutrition-optimizer",
       "/nutrition-optimizer"
     ],
     "sourceProjects": [
@@ -6483,6 +7182,13 @@
       "agriculture-natural-resources/aquaculture-fish-farm"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AILivestockHealthMonitoring",
+        "path": "frontend/src/pages/AIToolsPage.js:47",
+        "route": "/ai-tools?tool=nutrition-optimizer",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      },
       {
         "kind": "api",
         "sourceProject": "AILivestockHealthMonitoring",
@@ -7304,11 +8010,13 @@
     "canonicalKey": "plan reforestation",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api",
       "navigation",
       "page"
     ],
     "routes": [
+      "/ai/compliance-review?tool=reforestation-plan",
       "/ai/reforestation-plan",
       "/api/ai/reforestation-plan"
     ],
@@ -7319,6 +8027,13 @@
       "agriculture-natural-resources/aquaculture-fish-farm"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIForestryTimberManagement",
+        "path": "client/src/pages/AIToolsPage.jsx:47",
+        "route": "/ai/compliance-review?tool=reforestation-plan",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      },
       {
         "kind": "api",
         "sourceProject": "AIForestryTimberManagement",
@@ -7603,6 +8318,32 @@
         "sourceProject": "AIForestryTimberManagement",
         "path": "client/src/components/Sidebar.jsx:31",
         "route": "",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      }
+    ]
+  },
+  {
+    "name": "Safety Incident Analyser",
+    "canonicalKey": "analyser incident safety",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/compliance-review?tool=safety-incident-analysis"
+    ],
+    "sourceProjects": [
+      "AIForestryTimberManagement"
+    ],
+    "consolidatedFromApps": [
+      "agriculture-natural-resources/aquaculture-fish-farm"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIForestryTimberManagement",
+        "path": "client/src/pages/AIToolsPage.jsx:41",
+        "route": "/ai/compliance-review?tool=safety-incident-analysis",
         "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
       }
     ]
@@ -8486,10 +9227,12 @@
     "canonicalKey": "alert market timber",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api",
       "page"
     ],
     "routes": [
+      "/ai/compliance-review?tool=timber-market-alert",
       "/ai/timber-market-alert",
       "/api/ai/timber-market-alert"
     ],
@@ -8500,6 +9243,13 @@
       "agriculture-natural-resources/aquaculture-fish-farm"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIForestryTimberManagement",
+        "path": "client/src/pages/AIToolsPage.jsx:13",
+        "route": "/ai/compliance-review?tool=timber-market-alert",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      },
       {
         "kind": "api",
         "sourceProject": "AIForestryTimberManagement",
@@ -9409,10 +10159,12 @@
     "canonicalKey": "scan weather wildfire",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api",
       "page"
     ],
     "routes": [
+      "/ai/compliance-review?tool=wildfire-weather-scan",
       "/ai/wildfire-weather-scan",
       "/api/ai/wildfire-weather-scan"
     ],
@@ -9423,6 +10175,13 @@
       "agriculture-natural-resources/aquaculture-fish-farm"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIForestryTimberManagement",
+        "path": "client/src/pages/AIToolsPage.jsx:32",
+        "route": "/ai/compliance-review?tool=wildfire-weather-scan",
+        "originApp": "agriculture-natural-resources/aquaculture-fish-farm"
+      },
       {
         "kind": "api",
         "sourceProject": "AIForestryTimberManagement",

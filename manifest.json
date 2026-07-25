@@ -11,12 +11,12 @@
     "AIForestryTimberManagement",
     "AILivestockHealthMonitoring"
   ],
-  "featureCount": 252,
-  "candidateFeatureCount": 353,
-  "eliminatedSimilarFeatures": 101,
-  "evidenceCount": 622,
-  "aiPageCount": 20,
-  "sourceAIPageCount": 21,
+  "featureCount": 276,
+  "candidateFeatureCount": 364,
+  "eliminatedSimilarFeatures": 88,
+  "evidenceCount": 664,
+  "aiPageCount": 37,
+  "sourceAIPageCount": 37,
   "featureEvidencePolicy": "Existing source routes, pages, APIs, models, schemas, and navigation only",
   "optimizationPolicy": "Equivalent feature names are consolidated once per industry and assigned to one canonical app owner",
   "database": "database.sqlite",
@@ -25,6 +25,6 @@
     "seededTables": 30,
     "seededRows": 450
   },
-  "visibleFeatureCount": 63,
+  "visibleFeatureCount": 88,
   "featureVisibilityMode": "seeded-or-ai"
 }
