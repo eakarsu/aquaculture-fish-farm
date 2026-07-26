@@ -3,7 +3,7 @@
 Industry: **Agriculture & Natural Resources**  
 Specialization: **Aquaculture Fish Farm**
 
-This standalone application consolidates source-backed capabilities into 276 optimized features, including 88 visible data-backed or AI-enabled views. Its public demo SQLite database contains 450 sanitized source rows across 30 imported tables and 120 operational workflow records.
+This standalone application consolidates source-backed capabilities into 276 optimized features, including all 276 source-backed feature views. Its public demo SQLite database contains 450 sanitized source rows across 30 imported tables and 120 operational workflow records.
 
 ## Run locally
 
